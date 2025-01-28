@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* @font-face {
+            font-family: 'DejaBu Sans Condensed';
+            src: url('/assets/fonts/DejaBu Sans Condensed.ttf') format('truetype');
+        } */
+
+        p {
+            margin: 0;
+        }
+
+        body {
+            font-family: 'DejaBu Sans Condensed', sans-serif;
+            color: #212529;
+        }
+
+        .container {
+            max-width: 1240px;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-bottom: 8rem;
+            flex-direction: column;
+            break-inside: avoid-page;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1.25rem;
+            /* 5 */
+        }
+
+        .content-center {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-size-for-print {
+            width: 540px;
+            height: 130px;
+        }
+
+        .text-small {
+            font-size: 13px;
+        }
+
+        .text-sky-900 {
+            color: #1e40af;
+        }
+
+        .border-y-2 {
+            border-top-width: 2px;
+            border-bottom-width: 2px;
+        }
+
+        .border-black {
+            border-color: black;
+            border-top-color: black;
+            border-bottom-color: black;
+        }
+
+        .mt-5 {
+            margin-top: 1.25rem;
+        }
+
+        .mb-7 {
+            margin-bottom: 1.75rem;
+        }
+
+        .text-2xl {
+            font-size: 1.5rem;
+        }
+
+        .gap-7 {
+            gap: 1.75rem;
+        }
+
+        .mb-8 {
+            margin-bottom: 2rem;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .flex-col {
+            flex-direction: column;
+        }
+
+        .flex-1 {
+            flex: 1;
+        }
+
+        .font-bold {
+            font-weight: bold;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        .my-2 {
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .my-3-5 {
+            margin-top: 0.875rem;
+            margin-bottom: 0.875rem;
+        }
+
+        .mb-1 {
+            margin-bottom: 0.25rem;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-30px {
+            font-size: 30px;
+        }
+
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+
+        .mr-2 {
+            margin-right: 0.5rem;
+        }
+
+        .max-w-xl {
+            max-width: 36rem;
+        }
+
+        .border-b {
+            border-bottom-width: 1px;
+        }
+
+        .px-4 {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .ml-2 {
+            margin-left: 0.5rem;
+        }
+
+        .input {
+            height: 30px;
+            border: none;
+            border-bottom: 1px solid black;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        .justify-center {
+            justify-content: center;
+        }
+
+        .mt-2 {
+            margin-top: 0.5rem !important;
+        }
+
+        .mb-2 {
+            margin-bottom: 0.5rem !important;
+        }
+
+        .mb-6 {
+            margin-bottom: 1.5rem;
+        }
+
+        .mt-4 {
+            margin-top: 1rem;
+        }
+
+        .min-w-80 {
+            min-width: 20rem;
+        }
+
+        .max-w-96 {
+            max-width: 24rem;
+        }
+
+        .mx-2 {
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+        }
+
+        .px-4 {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .items-center {
+            align-items: center;
+        }
+
+        .items-end {
+            align-items: flex-end;
+        }
+
+        .mr-auto {
+            margin-right: auto;
+        }
+
+        .ml-auto {
+            margin-left: auto;
+        }
+
+        .justify-between {
+            justify-content: space-between;
+        }
+        .gap-5 {
+            gap: 1.25rem; /* 5 */
+        }
+        
+        .mb-1-5 {
+            margin-bottom: 1.5rem;
+        }
+        
+        .w-96 {
+            width: 24rem; /* 96 */
+        }
+        .mr-4 {
+            margin-right: 1rem; /* 4 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header-container">
+            <div class="content-center">
+                <img src="assets/NYlogo.png" class="logo-size-for-print" alt="Picture of the author" />
+            </div>
+            <div class="flex flex-col text-small">
+                <p class="mb-1">New York State</p>
+                <b class="mb-1">Department of State</b>
+                <b class="mb-1">Division of Licensing Services</b>
+                <p class="mb-1">P.O. Box 22001</p>
+                <p class="mb-1">Albany, NY 12201-2001</p>
+                <p class="mb-1">Customer Service: (518) 474-4429</p>
+                <a href="https://www.dos.ny.gov" target="_blank" class="text-sky-900">www.dos.ny.gov</a>
+            </div>
+        </div>
+        <div class="mt-5 mb-7" style="border-bottom: 2px solid black; border-top: 2px solid black;">
+            <h3 class="text-2xl" style="margin-top: 10px; margin-bottom: 10px;">New York State Disclosure Form for Buyer
+                and Seller</h3>
+        </div>
+        <div class="flex gap-7 mb-8">
+            <div class="flex flex-col flex-1">
+                <h4 class="font-bold my-2">THIS IS NOT A CONTRACT</h4>
+                <p class="italic my-2">New York State law requires real estate licensees who are acting as agents of
+                    buyers
+                    or sellers of property to advise the potential buyers or sellers with whom they work of the nature
+                    of
+                    their agency relationship and the rights and obligations it creates. This disclosure will help you
+                    to
+                    make informed choices about your relationship with the real estate broker and its sales agents.</p>
+                <p class="italic my-2">Throughout the transaction you may receive more than one disclosure form. The law
+                    may
+                    require each agent assisting in the transaction to present you with this disclosure form. A real
+                    estate
+                    agent is a person qualified to advise about real estate.</p>
+                <p class="italic" style="margin-bottom: 2rem;">If you need legal, tax or other advice, consult with a
+                    professional in that field.</p>
+                <hr style="width: 100%;" />
+                <h3 class="font-bold text-30px text-center">Disclosure Regarding Real Estate Agency Relationships</h3>
+                <h4 class="font-bold my-2">Seller's Agent</h4>
+                <p>A seller’s agent is an agent who is engaged by a seller to represent the seller’s interests. The
+                    seller’s
+                    agent does this by securing a buyer for the seller’s home at a price and on terms acceptable to the
+                    seller. A seller’s agent has, without limitation, the following fiduciary duties to the seller:
+                    reasonable care, undivided loyalty, confidentiality, full disclosure, obedience and duty to account.
+                    A
+                    seller’s agent does not represent the interests of the buyer. The obligations of a seller’s agent
+                    are
+                    also subject to any specific provisions set forth in an agreement between the agent and the seller.
+                    In
+                    dealings with the buyer, a seller’s agent should (a) exercise reasonable skill and care in
+                    performance
+                    of the agent’s duties; (b) deal honestly, fairly and in good faith; and (c) disclose all facts known
+                    to
+                    the agent materially affecting the value or desirability of property, except as otherwise provided
+                    by
+                    law.</p>
+                <h4 class="font-bold my-2">Buyer's Agent</h4>
+                <p>A buyer’s agent is an agent who is engaged by a buyer to represent the buyer’s interest. The buyer’s
+                    agent does this by negotiating the purchase of a home at a price and on terms acceptable to the
+                    buyer. A
+                    buyer’s agent has, without limitation, the following fiduciary duties to the buyer: reasonable care,
+                    undivided loyalty, confidentiality, full disclosure, obedience and duty to account. A buyer’s agent
+                    does
+                    not represent the interest of the seller. The obligations of a buyer’s agent are also subject to any
+                    specific provisions set forth in an agreement between the agent and the buyer. In dealings with the
+                    seller, a buyer’s agent should (a) exercise reasonable skill and care in performance of the agent’s
+                    duties; (b) deal honestly, fairly and in good faith; and (c) disclose all facts known to the agent
+                    materially affecting the buyer’s ability and/or willingness to perform a contract to acquire
+                    seller’s
+                    property that are not consistent with the agent’s fiduciary duties to the buyer.</p>
+            </div>
+            <div class="flex flex-col flex-1">
+                <h4 class="font-bold my-2">Broker's Agents</h4>
+                <p>A broker’s agent is an agent that cooperates or is engaged by a listing agent or a buyer’s agent (but
+                    does not work for the same firm as the listing agent or buyer’s agent) to assist the listing agent
+                    or
+                    buyer’s agent in locating a property to sell or buy, respectively, for the listing agent’s seller or
+                    the
+                    buyer agent’s buyer. The broker’s agent does not have a direct relationship with the buyer or seller
+                    and
+                    the buyer or seller cannot provide instructions or direction directly to the broker’s agent. The
+                    buyer
+                    and the seller therefore do not have vicarious liability for the acts of the broker’s agent. The
+                    listing
+                    agent or buyer’s agent do provide direction and instruction to the broker’s agent and therefore the
+                    listing agent or buyer’s agent will have liability for the acts of the broker’s agent.</p>
+                <h4 class="font-bold my-2">Dual Agent</h4>
+                <p>A real estate broker may represent both the buyer and the seller if both the buyer and seller give
+                    their
+                    informed consent in writing. In such a dual agency situation, the agent will not be able to provide
+                    the
+                    full range of fiduciary duties to the buyer and seller. The obligations of an agent are also subject
+                    to
+                    any specific provisions set forth in an agreement between the agent, and the buyer and seller. An
+                    agent
+                    acting as a dual agent must explain carefully to both the buyer and seller that the agent is acting
+                    for
+                    the other party as well. The agent should also explain the possible effects of dual representation,
+                    including that by consenting to the dual agency relationship the buyer and seller are giving up
+                    their
+                    right to undivided loyalty. A buyer or seller should carefully consider the possible consequences of
+                    a
+                    dual agency relationship before agreeing to such representation. A seller or buyer may provide
+                    advance
+                    informed consent to dual agency by indicating the same on this form.</p>
+                <h4 class="font-bold my-2">Dual Agent with Designated Sales Agents</h4>
+                <p>If the buyer and seller provide their informed consent in writing, the principals and the real estate
+                    broker who represents both parties as a dual agent may designate a sales agent to represent the
+                    buyer
+                    and another sales agent to represent the seller. A sales agent works under the supervision of the
+                    real
+                    estate broker. With the informed consent of the buyer and the seller in writing, the designated
+                    sales
+                    agent for the buyer will function as the buyer’s agent representing the interests of and advocating
+                    on
+                    behalf of the buyer and the designated sales agent for the seller will function as the seller’s
+                    agent
+                    representing the interests of and advocating on behalf of the seller in the negotiations between the
+                    buyer and seller. A designated sales agent cannot provide the full range of fiduciary duties to the
+                    landlord or tenant. A designated sales agent cannot provide full range of fiduciary duties to the
+                    buyer
+                    or seller. The designated sales agent must explain that like the dual agent under whose supervision
+                    they
+                    function, they cannot provide undivided loyalty. A buyer or seller should carefully consider the
+                    possible consequences of a dual agency relationship with designated sales agents before agreeing to
+                    such
+                    representation. A seller or buyer provide advance informed consent to dual agency with designated
+                    sales
+                    agents by indicating the same on this form.</p>
+            </div>
+        </div>
+        <div class="mb-8">
+            <p class="mr-2">
+                This form was provided to me by
+                <input class="input" style="min-width: 300px;" type="text" placeholder="" />
+                (print name of licensee) of <b>Oxford</b>
+                (print name of company, firm or brokerage), a licensed real estate broker acting in the interest of the:
+                </span>
+        </div>
+
+        <div class="flex mb-1">
+            <div class="flex-1 flex-col">
+                <label class="flex mb-2">Seller as a (check relationship below)</label>
+                <!-- Placeholder for Radio component -->
+                <div class="my-4">
+                    <input type="radio" id="s-seller" name="relationship_type" value="Seller's agent" disabled>
+                    <label for="s-seller">Seller's agent</label><br>
+                    <input type="radio" id="s-broker" name="relationship_type" value="Broker's agent" disabled>
+                    <label for="s-broker">Broker's agent</label>
+                </div>
+            </div>
+            <div class="flex-1 flex-col">
+                <label class="flex mb-2">Buyer as a (check relationship below)</label>
+                <!-- Placeholder for Radio component -->
+                <div class="my-4">
+                    <input type="radio" id="b-seller" name="relationship_type" value="Buyer's agent" disabled>
+                    <label for="b-seller">Buyer's agent</label><br>
+                    <input type="radio" id="b-broker" name="relationship_type" value="Broker's agent" disabled>
+                    <label for="b-broker">Broker's agent</label>
+                </div>
+            </div>
+        </div>
+        <div class="mr-auto ml-auto mb-6 mt-2">
+            <input type="radio" id="dual" name="relationship_type" value="Dual agent" disabled>
+            <label for="dual">Dual agent</label><br>
+            <input type="radio" id="d-dual" name="relationship_type" value="Dual agent with designated sales agent"
+                disabled>
+            <label for="d-dual">Dual agent with designated sales agent</label>
+        </div>
+        <div class="mb-2">
+            <p>For advance informed consent to either dual agency or dual agency with designated sales agents complete
+                section below:</p>
+            <!-- Placeholder for Radio component -->
+            <div class="mb-6 mt-4">
+                <input type="radio" id="dual-yes" name="advance_informed_consent"
+                    value="Advance informed consent dual agency" disabled>
+                <label for="dual-yes">Advance informed consent dual agency</label>
+            </div>
+        </div>
+        <div class="flex flex-wrap mb-2">
+            <span class="content-center">If dual agent with designated sales agents is indicated above: </span>
+            <span class="min-w-80 max-w-96 content-center mx-2 no-print">
+                <input class="input" style="min-width: 300px;" type="text" placeholder="" />
+            </span>
+            <span class="content-center">is appointed to represent the buyer; and</span>
+            <span class="min-w-80 max-w-96 content-center mr-2 no-print">
+                <input class="input" style="min-width: 300px;" type="text" placeholder="" />
+            </span>
+            <span class="content-center">is appointed to represent the seller in this transaction.</span>
+        </div>
+        <div class="flex">
+            <span class="content-center">(I) (We)</span>
+            <span class="min-w-80 max-w-96 content-center mx-2 no-print">
+                <!-- Placeholder for Input component -->
+                <input class="input" style="min-width: 300px;" type="text" placeholder="" />
+            </span>
+            <span class="content-center">acknowledge receipt of a copy of this disclosure</span>
+        </div>
+        <div class="flex content-center mb-2 mt-2">
+            <span>form: signature of</span>
+            <!-- Placeholder for Checkbox component -->
+            <input type="checkbox" name="signature_of_buyer" class="items-center ml-2" disabled>
+            <span>Buyer(s) and/or</span>
+            <!-- Placeholder for Checkbox component -->
+            <input type="checkbox" name="signature_of_seller" class="items-center ml-2" disabled>
+            <span>Seller(s):</span>
+        </div>
+        <div class="flex mb-2 gap-5">
+            <div class="flex flex-1 items-end">
+                <label class="mr-2 flex" for="client_signature">Client Signature:</label>
+                <div style="flex: 1; border-bottom: 1px solid #212529; min-width: 100px; min-height: 70px;">
+                    <!-- TODO: Signature as image -->
+                </div>
+            </div>
+            <div class="flex flex-1 items-end">
+                <label class="mr-2 flex" for="agent_signature">Agent Signature:</label>
+                <div style="flex: 1; border-bottom: 1px solid #212529; min-width: 100px; min-height: 70px;">
+                    <!-- TODO: Signature as image -->
+                </div>
+            </div>
+        </div>
+        <div class="flex mb-2 gap-5">
+            <div class="flex-1 flex-col gap-5">
+                <div class="mb-2 flex items-end mb-1-5">
+                    <label class="mr-2 flex" for="client_email">Email:</label>
+                    <input class="input" style="flex: 1; outline: none;" type="text" id="sf-1" name="client_email" value="">
+                </div>
+                <div class="mb-2 flex items-end">
+                    <label class="mr-2 flex" for="client_signed_date">Date:</label>
+                    <input class="input" style="flex: 1; outline: none;" type="date" id="sf-1" name="client_signed_date" value="">
+                </div>
+            </div>
+            <div class="flex-1 flex-col gap-5">
+                <div class="mb-2 flex items-end mb-1-5">
+                    <label class="mr-2 flex" for="agent_email">Email:</label>
+                    <input class="input" style="flex: 1; outline: none;" type="text" id="sf-1" name="agent_email" value="">
+                </div>
+                <div class="mb-2 flex items-end mt-2">
+                    <label class="mr-2 flex" for="agent_signed_date">Date:</label>
+                    <input class="input" style="flex: 1; outline: none;" type="date" id="sf-1" name="agent_signed_date" value="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
